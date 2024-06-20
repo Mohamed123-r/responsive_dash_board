@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
-
 import 'all_expenses_header.dart';
 
 class AllExpenses extends StatelessWidget {
