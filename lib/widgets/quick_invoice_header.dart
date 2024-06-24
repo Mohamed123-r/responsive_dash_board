@@ -11,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'All Expenses',
+          'Quick Invoice',
           style: AppStyles.styleSemiBold20(),
         ),
         const CircleAvatar(
