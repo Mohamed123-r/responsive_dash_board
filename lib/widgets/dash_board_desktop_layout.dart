@@ -17,7 +17,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
             child: CustomDrawer(),
           ),
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Padding(
               padding: EdgeInsets.all(32.0),
               child: Column(
@@ -27,7 +27,8 @@ class DashBoardDesktopLayout extends StatelessWidget {
                     height: 24,
                   ),
                   Expanded(
-                    child: QuickInvoice(),
+                    flex: 2,
+                    child: SingleChildScrollView(child: QuickInvoice()),
                   ),
                 ],
               ),
