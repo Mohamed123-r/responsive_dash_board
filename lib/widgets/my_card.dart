@@ -11,6 +11,7 @@ class MyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           MyCardSection(),
