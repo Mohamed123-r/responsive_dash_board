@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/widgets/my_card_and_income_section.dart';
+import 'package:responsive_dash_board/widgets/income.dart';
 import 'all_expanses_end_quick_invoice_section.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
@@ -28,7 +28,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
             flex: 3,
             child: Padding(
               padding: EdgeInsets.only(right: 24, top: 24),
-              child: MyCardAndIncomeSection(),
+              child: Income(),
             ),
           ),
         ],
