@@ -8,9 +8,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xffF7F9FA),
-      body: Row(
+    return const  Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
@@ -36,7 +34,6 @@ class DashBoardDesktopLayout extends StatelessWidget {
             ),
           ),
         ],
-      ),
     );
   }
 }
