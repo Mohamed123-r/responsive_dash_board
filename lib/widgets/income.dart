@@ -1,7 +1,7 @@
-import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/utils/size_config.dart';
 import 'custom_background_container.dart';
 import 'income_details.dart';
 import 'income_chart.dart';
@@ -12,13 +12,12 @@ class Income extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(MediaQuery.of(context).size.width.toString());
+    double width = MediaQuery.of(context).size.width;
     return CustomBackGroundContainer(
       child: Column(
         children: [
           const IncomeHeader(),
-          MediaQuery.of(context).size.width < 1485 &&
-                  MediaQuery.of(context).size.width > 1200
+          width < 1485 && width > SizeConfig.desktop
               ? const Column(
                   children: [
                     IncomeDetails(),
