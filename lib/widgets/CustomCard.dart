@@ -29,13 +29,13 @@ class CustomCard extends StatelessWidget {
               titleAlignment: ListTileTitleAlignment.center,
               title: Text(
                 'Name card',
-                style: AppStyles.styleRegular16().copyWith(
+                style: AppStyles.styleRegular16(context).copyWith(
                   color: Colors.white,
                 ),
               ),
               subtitle: Text(
                 'Card holder',
-                style: AppStyles.styleMedium20().copyWith(color: Colors.white),
+                style: AppStyles.styleMedium20(context).copyWith(color: Colors.white),
               ),
               trailing: SvgPicture.asset(Assets.imagesGallery,
               ),
@@ -47,13 +47,13 @@ class CustomCard extends StatelessWidget {
                 contentPadding: EdgeInsets.zero,
                 title: Text(
                   '0918 8124 0042 8129',
-                  style: AppStyles.styleSemiBold24().copyWith(
+                  style: AppStyles.styleSemiBold24(context).copyWith(
                     color: Colors.white,
                   ),
                 ),
                 subtitle: Text(
                   '12/20 - 124',
-                  style: AppStyles.styleRegular16().copyWith(color: Colors.white),
+                  style: AppStyles.styleRegular16(context).copyWith(color: Colors.white),
                 ),
               ),
             )
