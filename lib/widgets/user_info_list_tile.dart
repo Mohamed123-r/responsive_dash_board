@@ -22,9 +22,13 @@ class UserInfoListTile extends StatelessWidget {
           width: 45,
           height: 45,
         ),
-        title: Text(
-          userInfoModel.title,
-          style: AppStyles.styleSemiBold16(context),
+        title: FittedBox(
+          fit:  BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
+          child: Text(
+            userInfoModel.title,
+            style: AppStyles.styleSemiBold16(context),
+          ),
         ),
         subtitle: Text(
           userInfoModel.subtitle,
