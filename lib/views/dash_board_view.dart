@@ -13,8 +13,8 @@ class DashBoardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer:
-          MediaQuery.of(context).size.width < SizeConfig.tablet ? const CustomDrawer() : null,
-      appBar: MediaQuery.of(context).size.width < SizeConfig.tablet
+          MediaQuery.of(context).size.width <= SizeConfig.tablet ? const CustomDrawer() : null,
+      appBar: MediaQuery.of(context).size.width <= SizeConfig.tablet
           ? AppBar(
               backgroundColor: Colors.white,
             )
