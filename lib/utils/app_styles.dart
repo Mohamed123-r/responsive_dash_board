@@ -113,6 +113,6 @@ double getScaleFactor(BuildContext context) {
   } else if (width <= SizeConfig.desktop) {
     return width / 1000;
   } else {
-    return width / 1950;
+    return width / 1550;
   }
 }
