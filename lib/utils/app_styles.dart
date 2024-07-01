@@ -109,10 +109,10 @@ double getResponsiveScaleFactor(BuildContext context,
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.of(context).size.width;
   if (width <= SizeConfig.tablet) {
-    return width / 360;
+    return width / 450;
   } else if (width <= SizeConfig.desktop) {
     return width / 1000;
   } else {
-    return width / 1550;
+    return width / 1950;
   }
 }
