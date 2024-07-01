@@ -58,6 +58,8 @@ class QuickInvoiceForm extends StatelessWidget {
             Expanded(
                 child: CustomButton(
               text:'Add more details' ,
+                  color:
+                  Color(0xffE0E0E0),
             )),
             SizedBox(
               width: 24,
