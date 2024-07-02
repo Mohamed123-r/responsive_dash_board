@@ -19,9 +19,12 @@ class IncomeDetailsItem extends StatelessWidget {
           color: incomeDetailsModel.color,
         ),
       ),
-      title: Text(
-        incomeDetailsModel.title,
-        style: AppStyles.styleRegular16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          incomeDetailsModel.title,
+          style: AppStyles.styleRegular16(context),
+        ),
       ),
       trailing: Text(
         incomeDetailsModel.value,

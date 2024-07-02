@@ -14,7 +14,7 @@ class IncomeHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'All Expenses',
+          'Income',
           style: AppStyles.styleSemiBold20(context),
         ),
         const RangeOptions(),
