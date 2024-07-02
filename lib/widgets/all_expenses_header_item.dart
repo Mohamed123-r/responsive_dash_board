@@ -20,21 +20,23 @@ class AllExpensesItemHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundColor: backgroundIconColor ?? const Color(0xffFAFAFA),
-              child: Center(
-                child: SvgPicture.asset(
-                  itemModel.image,
-                  colorFilter: ColorFilter.mode(
-                    iconColor ?? const Color(0xFF4EB7F2),
-                    BlendMode.srcIn,
+            Flexible(
+              child: CircleAvatar(
+                radius: 30,
+                backgroundColor: backgroundIconColor ?? const Color(0xffFAFAFA),
+                child: Center(
+                  child: SvgPicture.asset(
+                    itemModel.image,
+                    colorFilter: ColorFilter.mode(
+                      iconColor ?? const Color(0xFF4EB7F2),
+                      BlendMode.srcIn,
+                    ),
                   ),
                 ),
               ),
             ),
-            const Spacer(),
             Transform.rotate(
               angle: -90 * 3.14 / 90,
               child: Icon(

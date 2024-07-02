@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../models/all_expenses_item_model.dart';
@@ -7,7 +6,9 @@ import 'all_expenses_header_item.dart';
 
 class InActiveAllExpensesItem extends StatelessWidget {
   const InActiveAllExpensesItem({super.key, required this.itemModel});
-  final AllExpensesItemModel itemModel ;
+
+  final AllExpensesItemModel itemModel;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +23,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           ),
         ),
       ),
-      child:  Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
@@ -31,23 +32,29 @@ class InActiveAllExpensesItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            itemModel.title,
-            style: AppStyles.styleSemiBold16(context),
+          FittedBox(
+            fit:  BoxFit.scaleDown, child: Text(
+              itemModel.title,
+              style: AppStyles.styleSemiBold16(context),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            itemModel.date,
-            style: AppStyles.styleRegular14(context),
+          FittedBox(
+            fit:  BoxFit.scaleDown, child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(context),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            itemModel.price,
-            style: AppStyles.styleSemiBold24(context),
+          FittedBox(
+            fit:  BoxFit.scaleDown, child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -55,10 +62,11 @@ class InActiveAllExpensesItem extends StatelessWidget {
   }
 }
 
-
 class ActiveAllExpensesItem extends StatelessWidget {
   const ActiveAllExpensesItem({super.key, required this.itemModel});
-  final AllExpensesItemModel itemModel ;
+
+  final AllExpensesItemModel itemModel;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -73,39 +81,47 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
         ),
       ),
-      child:  Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
             itemModel: itemModel,
             iconColor: Colors.white,
-            backgroundIconColor: const Color(0xFFffffff).withOpacity(0.10000000149011612),
+            backgroundIconColor:
+                const Color(0xFFffffff).withOpacity(0.10000000149011612),
           ),
           const SizedBox(
             height: 34,
           ),
-          Text(
-            itemModel.title,
-            style: AppStyles.styleSemiBold16(context).copyWith(
-              color: Colors.white,
+          FittedBox(
+            fit:  BoxFit.scaleDown, child: Text(
+              itemModel.title,
+              style: AppStyles.styleSemiBold16(context).copyWith(
+                color: Colors.white,
+              ),
             ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            itemModel.date,
-            style: AppStyles.styleRegular14(context).copyWith(
-              color: const Color(0xffFAFAFA)
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(context)
+                  .copyWith(color: const Color(0xffFAFAFA)),
             ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            itemModel.price,
-            style: AppStyles.styleSemiBold24(context).copyWith(
-              color: Colors.white,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(context).copyWith(
+                color: Colors.white,
+              ),
             ),
           ),
         ],
