@@ -9,14 +9,17 @@ class MyCardAndIncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        MyCard(),
-        SizedBox(
-          height: 24,
-        ),
-        Income(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.only(top: 24.0),
+      child: Column(
+        children: [
+          MyCard(),
+          SizedBox(
+            height: 24,
+          ),
+          Income(),
+        ],
+      ),
     );
   }
 }
