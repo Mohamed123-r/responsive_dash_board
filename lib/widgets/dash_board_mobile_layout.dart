@@ -12,7 +12,7 @@ class DashBoardMobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           children: [
             AllExpansesAndQuickInvoiceSection(),

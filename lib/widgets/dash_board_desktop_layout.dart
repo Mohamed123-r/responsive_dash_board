@@ -31,7 +31,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
                   Expanded(
                     flex: 3,
                     child: Padding(
-                      padding: EdgeInsets.only(right: 24, top: 24, bottom: 24),
+                      padding: EdgeInsets.only(right: 24, bottom: 24),
                       child: MyCardAndIncomeSection(),
                     ),
                   ),
